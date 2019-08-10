@@ -1,8 +1,8 @@
 #!/bin/sh
-curl "https://orion.e-suda.info/v2/op/update" -D - -sS \
+curl "http://orion/v2/op/update" -D - -sS \
 -H 'Content-Type: application/json' \
 -H 'Fiware-Service: wirecloud' \
--H 'Fiware-ServicePath: /test' \
+-H 'Fiware-ServicePath: /data' \
 -d @- <<EOF
 {
   "actionType": "append",
@@ -14,7 +14,7 @@ curl "https://orion.e-suda.info/v2/op/update" -D - -sS \
         "type": "geo:json",
         "value": {
           "type": "Point",
-          "coordinates": [ 139.692144, 35.689913 ]
+          "coordinates": [ 139.772900, 35.698225 ]
         }
       }
     },
@@ -25,7 +25,7 @@ curl "https://orion.e-suda.info/v2/op/update" -D - -sS \
         "type": "geo:json",
         "value": {
           "type": "LineString",
-          "coordinates": [ [ 139.692144, 35.689913 ], [ 139.741369, 35.658161 ], [ 139.767168, 35.681489 ] ]
+          "coordinates": [ [ 139.702629, 35.671282 ], [ 139.701519, 35.657950 ], [ 139.709852, 35.646562 ] ]
         }
       }
     },
